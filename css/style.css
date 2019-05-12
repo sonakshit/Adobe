@@ -1,83 +1,100 @@
 *, *::after, *::before {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 body {
   background: cornflowerblue;
-  font-family: Camphor,Open Sans,Segoe UI,sans-serif; }
+  font-family: Camphor, Open Sans, Segoe UI, sans-serif;
+}
 
 ul {
   list-style-type: none;
-  padding-left: 0px; }
+  padding-left: 0px;
+}
 
 .label {
   text-decoration: none;
-  font-family: sans-serif;
+  font-family: Camphor, Open Sans, Segoe UI, sans-serif;
   font-weight: 500;
   font-size: 17px;
-  color: white; }
+  color: white;
+}
 
 .ul-container {
   display: flex;
-  text-align: center; }
+  text-align: center;
+}
 
 .ul-container li.dropdownItems {
   padding: 10px 0;
   position: relative;
-  width: 150px; }
-  .ul-container li.dropdownItems .dropdown-content {
-    position: absolute; }
-    .ul-container li.dropdownItems .dropdown-content .dropdownArrow {
-      top: 14px;
-      margin: 0 0 0 -6px;
-      width: 12px;
-      height: 12px;
-      transform: rotate(45deg);
-      border-radius: 4px 0 0 0;
-      background: #fff;
-      box-shadow: -3px -3px 5px rgba(82, 95, 127, 0.04);
-      will-change: transform;
-      position: absolute;
-      left: 18%; }
-    .ul-container li.dropdownItems .dropdown-content .alignment {
-      width: auto;
-      background-color: white;
-      padding: 25px;
-      border-radius: 10px;
-      text-align: left;
-      margin: 20px; }
-      .ul-container li.dropdownItems .dropdown-content .alignment li .linkContent {
-        flex: 1;
-        margin-left: 18px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 15px 0; }
-        .ul-container li.dropdownItems .dropdown-content .alignment li .linkContent h3 {
-          margin: 0;
-          color: #6772e5;
-          font-size: 16px;
-          line-height: 22px;
-          text-transform: uppercase;
-          font-weight: 600;
-          letter-spacing: .025em; }
-        .ul-container li.dropdownItems .dropdown-content .alignment li .linkContent p {
-          font-size: 15px;
-          line-height: 22px;
-          color: #6b7c93;
-          margin: 5px 0 0;
-          display: block;
-          white-space: nowrap; }
+  width: 150px;
+}
+.ul-container li.dropdownItems .dropdown-content {
+  position: absolute;
+}
+.ul-container li.dropdownItems .dropdown-content .dropdownArrow {
+  top: 14px;
+  margin: 0 0 0 -6px;
+  width: 12px;
+  height: 12px;
+  transform: rotate(45deg);
+  border-radius: 4px 0 0 0;
+  background: #fff;
+  box-shadow: -3px -3px 5px rgba(82, 95, 127, 0.04);
+  will-change: transform;
+  position: absolute;
+  left: 18%;
+}
+.ul-container li.dropdownItems .dropdown-content .alignment {
+  width: auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: left;
+  margin: 20px;
+}
+.ul-container li.dropdownItems .dropdown-content .alignment li .linkContent {
+  flex: 1;
+  margin-left: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px 0;
+}
+.ul-container li.dropdownItems .dropdown-content .alignment li .linkContent h3 {
+  margin: 0;
+  color: #6772e5;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+}
+.ul-container li.dropdownItems .dropdown-content .alignment li .linkContent p {
+  font-size: 15px;
+  line-height: 22px;
+  color: #6b7c93;
+  margin: 5px 0 0;
+  display: block;
+  white-space: nowrap;
+}
 
 @media only screen and (max-width: 768px) {
   .ul-container {
-    display: none; }
+    display: none;
+  }
+
   .hamburgerMenuWrapper {
-    display: inline-block; }
-    .hamburgerMenuWrapper div {
-      width: 35px;
-      height: 5px;
-      background-color: black;
-      margin: 6px 0; }
+    display: inline-block;
+  }
+  .hamburgerMenuWrapper div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+  }
+
   .menuWrapper {
     background: white;
     display: inline-block;
@@ -87,20 +104,29 @@ ul {
     border-radius: 10px;
     padding: 20px;
     color: grey;
-    width: 98%; }
-    .menuWrapper .itemWrapper {
-      column-count: 2; }
-      .menuWrapper .itemWrapper .items {
-        padding-bottom: 20px; }
-    .menuWrapper .closeIcon {
-      text-align: right;
-      font-size: 20px; } }
-
+    width: 98%;
+  }
+  .menuWrapper .itemWrapper {
+    column-count: 2;
+  }
+  .menuWrapper .itemWrapper .items {
+    padding-bottom: 20px;
+  }
+  .menuWrapper .closeIcon {
+    text-align: right;
+    font-size: 20px;
+  }
+}
 .inline-block {
-  display: inline-block; }
+  display: inline-block;
+}
 
 .inline {
-  display: inline; }
+  display: inline;
+}
 
 .hide {
-  display: none; }
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

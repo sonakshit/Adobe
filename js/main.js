@@ -10,21 +10,19 @@ $(document).ready(function () {
                 var a = $('<a></a>').attr("href", "#").addClass("label").text(key);
                 li.append(a);
                 var subVal = data[key];
-                var subDiv = $("<div></div>").attr("class", "dropdown-content hide");
-                var arrow = $("<div></div>").attr("class", "dropdownArrow");
+                var dropdwonContent = $("<div></div>").attr("class", "dropdown-content hide");
+                var dropdownArrow = $("<div></div>").attr("class", "dropdownArrow");
                 var subUl = $("<ul></ul>").addClass("alignment");
-                //  var subUl=$("<ul></ul>").addClass("hide alignment").hide();
-                li.append(subDiv);
-                subDiv.append(arrow);
-                subDiv.append(subUl);
+                li.append(dropdwonContent);
+                dropdwonContent.append(dropdownArrow);
+                dropdwonContent.append(subUl);
                 for (let first in subVal) {
-                    //  debugger;
                     var subLi = $("<li></li>");
                     var innerWrapper = $("<div></div>").attr("class", "linkContent");
-                    var createh3 = $("<h3></h3>").text(subVal[first].title);
-                    var createp = $("<p></p>").text(subVal[first]["sub-title"])
-                    innerWrapper.append(createh3);
-                    innerWrapper.append(createp);
+                    var title = $("<h3></h3>").text(subVal[first].title);
+                    var subTitle = $("<p></p>").text(subVal[first]["sub-title"])
+                    innerWrapper.append(title);
+                    innerWrapper.append(subTitle);
                     subLi.append(innerWrapper);
                     subUl.append(subLi);
                 }
